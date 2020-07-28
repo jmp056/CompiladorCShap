@@ -40,13 +40,15 @@
             this.CodigoTextBox.Name = "CodigoTextBox";
             this.CodigoTextBox.Size = new System.Drawing.Size(600, 350);
             this.CodigoTextBox.TabIndex = 0;
+            this.CodigoTextBox.TextChanged += new System.EventHandler(this.CodigoTextBox_TextChanged);
             // 
             // ResultadoTextBox
             // 
-            this.ResultadoTextBox.Location = new System.Drawing.Point(70, 370);
+            this.ResultadoTextBox.Location = new System.Drawing.Point(60, 370);
             this.ResultadoTextBox.Multiline = true;
             this.ResultadoTextBox.Name = "ResultadoTextBox";
-            this.ResultadoTextBox.Size = new System.Drawing.Size(540, 40);
+            this.ResultadoTextBox.ReadOnly = true;
+            this.ResultadoTextBox.Size = new System.Drawing.Size(550, 40);
             this.ResultadoTextBox.TabIndex = 1;
             // 
             // CompilarButton
@@ -56,6 +58,7 @@
             this.CompilarButton.Size = new System.Drawing.Size(40, 40);
             this.CompilarButton.TabIndex = 2;
             this.CompilarButton.UseVisualStyleBackColor = true;
+            this.CompilarButton.Click += new System.EventHandler(this.CompilarButton_Click);
             // 
             // Form1
             // 
@@ -67,6 +70,7 @@
             this.Controls.Add(this.CodigoTextBox);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
