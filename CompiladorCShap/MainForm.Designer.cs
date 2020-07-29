@@ -1,6 +1,6 @@
 ﻿namespace CompiladorCShap
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.CodigoTextBox = new System.Windows.Forms.TextBox();
             this.ResultadoTextBox = new System.Windows.Forms.TextBox();
             this.CompilarButton = new System.Windows.Forms.Button();
@@ -53,6 +54,7 @@
             // 
             // CompilarButton
             // 
+            this.CompilarButton.Image = ((System.Drawing.Image)(resources.GetObject("CompilarButton.Image")));
             this.CompilarButton.Location = new System.Drawing.Point(10, 369);
             this.CompilarButton.Name = "CompilarButton";
             this.CompilarButton.Size = new System.Drawing.Size(40, 40);
@@ -68,8 +70,9 @@
             this.Controls.Add(this.CompilarButton);
             this.Controls.Add(this.ResultadoTextBox);
             this.Controls.Add(this.CodigoTextBox);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Comilador de CSharp";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
